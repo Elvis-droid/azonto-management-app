@@ -29,9 +29,10 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
+    "owner": "murdas-team",
     "extra": {
       "eas": {
-        "projectId": "REPLACE_WITH_YOUR_EAS_PROJECT_ID"
+        "projectId": "4483052a-f179-44c7-ac33-89574eb35457"
       }
     }
   }
