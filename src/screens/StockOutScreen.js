@@ -81,12 +81,12 @@ export default function StockOutScreen() {
       <View style={{ flex: 1 }}>
         <Text style={styles.itemName}>{item.productName}</Text>
         <Text style={styles.itemMeta}>
-          Sold {item.quantitySold} unit(s) @ GHS {item.salePrice.toFixed(2)}
+          Sold {item.quantitySold} unit(s) @ Tsh {item.salePrice.toFixed(2)}
         </Text>
         <Text style={styles.itemMeta}>Date: {formatDate(item.dateSold)}</Text>
       </View>
       <View style={styles.totalBadge}>
-        <Text style={styles.totalText}>GHS {(item.salePrice * item.quantitySold).toFixed(2)}</Text>
+        <Text style={styles.totalText}>Tsh {(item.salePrice * item.quantitySold).toFixed(2)}</Text>
         <Text style={styles.qtyLabel}>total</Text>
       </View>
       <TouchableOpacity onPress={() => confirmDelete(item.id)} style={styles.deleteBtn}>
@@ -166,7 +166,7 @@ export default function StockOutScreen() {
                   <View>
                     <Text style={styles.modalItemName}>{item.name}</Text>
                     <Text style={styles.itemMeta}>
-                      {item.quantity} in stock • Sells @ GHS {item.sellPrice.toFixed(2)}
+                      {item.quantity} in stock • Sells @ Tsh {item.sellPrice.toFixed(2)}
                     </Text>
                   </View>
                   <Ionicons name="chevron-forward" size={18} color={colors.textSecondary} />
