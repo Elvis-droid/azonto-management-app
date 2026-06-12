@@ -65,7 +65,7 @@ export default function StockInScreen() {
       <View style={{ flex: 1 }}>
         <Text style={styles.itemName}>{item.name}</Text>
         <Text style={styles.itemMeta}>
-          Bought @ GHS {item.buyPrice.toFixed(2)} • Sells @ GHS {item.sellPrice.toFixed(2)}
+          Bought @ Tsh {item.buyPrice.toFixed(2)} • Sells @ Tsh {item.sellPrice.toFixed(2)}
         </Text>
         <Text style={styles.itemMeta}>Added: {formatDate(item.dateAdded)}</Text>
       </View>
@@ -95,14 +95,14 @@ export default function StockInScreen() {
               <View style={[styles.formCard, elevation(5)]}>
                 <FormInput label="Product Name" placeholder="e.g. Bag of Rice" value={name} onChangeText={setName} />
                 <FormInput
-                  label="Price of Goods Bought (GHS)"
+                  label="Price of Goods Bought (Tsh)"
                   placeholder="e.g. 250"
                   keyboardType="numeric"
                   value={buyPrice}
                   onChangeText={setBuyPrice}
                 />
                 <FormInput
-                  label="Price to Sell (GHS)"
+                  label="Price to Sell (Tsh)"
                   placeholder="e.g. 320"
                   keyboardType="numeric"
                   value={sellPrice}
