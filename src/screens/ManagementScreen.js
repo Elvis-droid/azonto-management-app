@@ -37,11 +37,11 @@ export default function ManagementScreen() {
       <View style={styles.row}>
         <View style={styles.col}>
           <Text style={styles.metaLabel}>Buy Price</Text>
-          <Text style={styles.metaValue}>GHS {item.buyPrice.toFixed(2)}</Text>
+          <Text style={styles.metaValue}>Tsh {item.buyPrice.toFixed(2)}</Text>
         </View>
         <View style={styles.col}>
           <Text style={styles.metaLabel}>Sell Price</Text>
-          <Text style={styles.metaValue}>GHS {item.sellPrice.toFixed(2)}</Text>
+          <Text style={styles.metaValue}>Tsh {item.sellPrice.toFixed(2)}</Text>
         </View>
         <View style={styles.col}>
           <Text style={styles.metaLabel}>Days in Stock</Text>
@@ -52,11 +52,11 @@ export default function ManagementScreen() {
       <View style={styles.row}>
         <View style={styles.col}>
           <Text style={styles.metaLabel}>Stock Value</Text>
-          <Text style={styles.metaValue}>GHS {item.stockValue.toFixed(2)}</Text>
+          <Text style={styles.metaValue}>Tsh {item.stockValue.toFixed(2)}</Text>
         </View>
         <View style={styles.col}>
           <Text style={styles.metaLabel}>Potential Revenue</Text>
-          <Text style={styles.metaValue}>GHS {item.potentialRevenue.toFixed(2)}</Text>
+          <Text style={styles.metaValue}>Tsh {item.potentialRevenue.toFixed(2)}</Text>
         </View>
         <View style={styles.col}>
           <Text style={styles.metaLabel}>Initial Qty</Text>
@@ -86,13 +86,13 @@ export default function ManagementScreen() {
               </View>
               <View style={{ flex: 1 }}>
                 <Text style={styles.profitLabel}>Total Profit This Month</Text>
-                <Text style={styles.profitValue}>GHS {monthly.totalProfit.toFixed(2)}</Text>
+                <Text style={styles.profitValue}>Tsh {monthly.totalProfit.toFixed(2)}</Text>
               </View>
             </View>
 
             <View style={styles.statsRow}>
-              <StatTile label="Revenue (Month)" value={`GHS ${monthly.totalRevenue.toFixed(0)}`} color={colors.primary} />
-              <StatTile label="Cost (Month)" value={`GHS ${monthly.totalCost.toFixed(0)}`} color={colors.warning} />
+              <StatTile label="Revenue (Month)" value={`Tsh ${monthly.totalRevenue.toFixed(0)}`} color={colors.primary} />
+              <StatTile label="Cost (Month)" value={`Tsh ${monthly.totalCost.toFixed(0)}`} color={colors.warning} />
               <StatTile label="Items Sold" value={`${monthly.itemsSold}`} color={colors.accent} />
             </View>
 
