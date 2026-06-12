@@ -32,8 +32,8 @@ export default function HomeScreen({ navigation }) {
 
         <View style={styles.statsRow}>
           <StatTile label="Products Tracked" value={`${totals.totalProductsTracked}`} color={colors.primary} />
-          <StatTile label="Stock Value" value={`GHS ${totals.totalStockValue.toFixed(0)}`} color={colors.accent} />
-          <StatTile label="This Month Profit" value={`GHS ${monthly.totalProfit.toFixed(0)}`} color={colors.success} />
+          <StatTile label="Stock Value" value={`Tsh ${totals.totalStockValue.toFixed(0)}`} color={colors.accent} />
+          <StatTile label="This Month Profit" value={`Tsh ${monthly.totalProfit.toFixed(0)}`} color={colors.success} />
         </View>
 
         <Text style={styles.sectionLabel}>CATEGORIES</Text>
